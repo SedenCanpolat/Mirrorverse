@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController controller;
     public float playerSpeed;
 
+    public float playerRunningSpeed;
+
     public float gravity = -9.8f;
 
 
@@ -43,6 +45,11 @@ public class PlayerMovement : MonoBehaviour
 
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+
+        if(Input.GetKey(KeyCode.LeftShift)){
+            controller.Move(move * playerSpeed * playerRunningSpeed * Time.deltaTime);
+        }
+
 
 
     }
