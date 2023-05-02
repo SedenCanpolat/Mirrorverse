@@ -39,18 +39,27 @@ public class PlayerMovement : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
        
-        Vector3 move = transform.right * x + transform.forward * z;
-        
-        controller.Move(move * playerSpeed * Time.deltaTime);
+        Vector3 direction = transform.right * x + transform.forward * z;
+        //Vector3 move =  Vector3.right * x + Vector3.forward * z; 
+
+        float PlayerSpeed = playerSpeed;
+        if(Input.GetKey(KeyCode.LeftShift)){
+            PlayerSpeed = playerRunningSpeed;
+        }
+
+        controller.Move(direction * PlayerSpeed * Time.deltaTime);
 
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
 
-        if(Input.GetKey(KeyCode.LeftShift)){
-            controller.Move(move * playerSpeed * playerRunningSpeed * Time.deltaTime);
-        }
-
-
 
     }
+
+
+void OnDrawGizmos() {
+    Gizmos.DrawSphere(groundCheck.position, groundDistance);
 }
+
+
+}
+
