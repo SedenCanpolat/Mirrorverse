@@ -7,14 +7,8 @@ public class PlayerHealth : MonoBehaviour
 {
     public Slider healthBar;
     bool isGameOver;
-    // Start is called before the first frame update
-    void Start()
-    {
-        //healthBar.value = 1;
-    }
-
-
-
+    
+ 
 
     private void OnControllerColliderHit(ControllerColliderHit hit) {
         Rigidbody rigidbody = hit.collider.attachedRigidbody;
@@ -22,15 +16,25 @@ public class PlayerHealth : MonoBehaviour
             healthBar.value -= 0.005f;
             
         }
+        
+         if(hit.gameObject.tag == "Fog"){
+               hit.gameObject.GetComponent<FallenGround>().fall();
+        }
+
         if(healthBar.value <= 0 && isGameOver == false){
             Debug.Log("You Lost");
             isGameOver = true;
         }
     }
 
+
     private void Update() {
-        
-        
+
+        if(gameObject.transform.position.y < -5  && isGameOver == false){
+            healthBar.value = 0;
+            Debug.Log("You Lost");
+            isGameOver = true;
+        }
     }
 
 
