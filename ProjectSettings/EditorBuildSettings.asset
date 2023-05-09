@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Beginning.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/Skybox.unity
+    guid: 51e1a226b51bba042992622a5ee4956d
+  - enabled: 1
+    path: Assets/Scenes/Ofis.unity
+    guid: 0975a46b02f0b704d875c8c0ddd1bf0f
+  - enabled: 1
+    path: Assets/Scenes/Beginning 1.unity
+    guid: b1185953c58dd6344bfe73012bf30942
   m_configObjects: {}
