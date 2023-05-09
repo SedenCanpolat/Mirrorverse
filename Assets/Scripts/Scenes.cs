@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Scenes : MonoBehaviour
 {
+    bool control;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +16,11 @@ public class Scenes : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SceneManager.LoadScene(1,LoadSceneMode.Additive);
+        if(SceneManager.GetActiveScene().buildIndex == 1 && control == false){
+            SceneManager.LoadScene(0,LoadSceneMode.Additive);
+            control = true;
+        }
+        
         
     }
 }
