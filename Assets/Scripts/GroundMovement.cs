@@ -19,7 +19,7 @@ public class GroundMovement : MonoBehaviour
 
     IEnumerator fall1()
     {
-        yield return new WaitForSecondsRealtime(5f);
+        yield return new WaitForSecondsRealtime(1f);
         f.AddComponent<Rigidbody2D>();
     }
 }
