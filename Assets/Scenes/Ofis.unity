@@ -9668,7 +9668,7 @@ PrefabInstance:
     - target: {fileID: 8026279723124770019, guid: 751c45e7fa8e11d4895b70b74cdb2b61,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.23
+      value: 1.16
       objectReference: {fileID: 0}
     - target: {fileID: 8026279723124770019, guid: 751c45e7fa8e11d4895b70b74cdb2b61,
         type: 3}
@@ -18590,31 +18590,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InGameUI
-      objectReference: {fileID: 0}
-    - target: {fileID: 8131609761567229064, guid: 6b8623e6940849d4ab09142d4b210702,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3.93935
-      objectReference: {fileID: 0}
-    - target: {fileID: 8131609761567229064, guid: 6b8623e6940849d4ab09142d4b210702,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3.93935
-      objectReference: {fileID: 0}
-    - target: {fileID: 8131609761567229064, guid: 6b8623e6940849d4ab09142d4b210702,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3.93935
-      objectReference: {fileID: 0}
-    - target: {fileID: 8131609761567229064, guid: 6b8623e6940849d4ab09142d4b210702,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -102
-      objectReference: {fileID: 0}
-    - target: {fileID: 8131609761567229064, guid: 6b8623e6940849d4ab09142d4b210702,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -55
       objectReference: {fileID: 0}
     - target: {fileID: 8131609762434997092, guid: 6b8623e6940849d4ab09142d4b210702,
         type: 3}
