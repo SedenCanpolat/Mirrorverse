@@ -8,6 +8,7 @@ TagManager:
   - Mirror
   - Spike
   - Fog
+  - Spinning
   layers:
   - Default
   - TransparentFX
