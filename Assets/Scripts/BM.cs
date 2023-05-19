@@ -25,11 +25,10 @@ public class BM : MonoBehaviour
     {   
         int i ;
         for(i = 0;i<343;i++){
-             yield return new WaitForSecondsRealtime(0.05f);
-             /*obj2 = GameObject.FindGameObjectsWithTag("2")[i];
-             obj2.AddComponent<Rigidbody>();*/
-             yield return new WaitForSecondsRealtime(0.05f);
+             yield return new WaitForSecondsRealtime(0.1f);
              obj1 = GameObject.FindGameObjectsWithTag("1")[i];
+             obj1.GetComponent<BoxCollider>().enabled = false;
+             //obj1.Destroy(BoxCollider)
              obj1.AddComponent<Rigidbody>();
              
         }
