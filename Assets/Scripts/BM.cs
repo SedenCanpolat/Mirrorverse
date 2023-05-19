@@ -24,12 +24,15 @@ public class BM : MonoBehaviour
     IEnumerator fall()
     {   
         int i ;
-        for(i = 0;i<343;i++){
+        //GameObject[] arr = GameObject.FindGameObjectsWithTag("1");
+        for(i = 0;i<transform.childCount;i++){
              yield return new WaitForSecondsRealtime(0.1f);
-             obj1 = GameObject.FindGameObjectsWithTag("1")[i];
+            // obj1 = arr[i];
+            obj1 = transform.GetChild(i).gameObject;
              obj1.GetComponent<BoxCollider>().enabled = false;
              //obj1.Destroy(BoxCollider)
              obj1.AddComponent<Rigidbody>();
+             obj1.GetComponent<Rigidbody>().AddTorque(Random.rotation.eulerAngles.normalized * 100);
              
         }
         /*int j;
