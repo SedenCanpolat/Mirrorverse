@@ -68,15 +68,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 8026279723124770018}
-  playerSpeed: 15
-  playerRunningSpeed: 25
+  playerSpeed: 10
+  playerRunningSpeed: 15
   gravity: -15
   groundCheck: {fileID: 8026279723155646698}
   groundDistance: 0.4
   groundMask:
     serializedVersion: 2
     m_Bits: 64
-  JumpHeight: 2
+  JumpHeight: 1.2
 --- !u!114 &8026279723124770017
 MonoBehaviour:
   m_ObjectHideFlags: 0
