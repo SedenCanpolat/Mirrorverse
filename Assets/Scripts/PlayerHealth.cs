@@ -12,9 +12,9 @@ public class PlayerHealth : MonoBehaviour
 
     
     public Image[] hearts;
-    public GameObject Danger;
+   // public GameObject Danger;
     private void EnableFalse(){
-        Danger.SetActive(false);
+      //  Danger.SetActive(false);
         for(int i = 0; i < 5; i++){
             hearts[i].enabled = false;
         }
@@ -56,11 +56,12 @@ public class PlayerHealth : MonoBehaviour
         }
 
         if(healthBar.value <= 0.10){
-            Danger.SetActive(true);
+           // Danger.SetActive(true);
         }
 
         if(healthBar.value == 0){
             Debug.Log("You Lost");
+           // yield return new WaitForSeconds(3f);
             SceneManager.LoadScene( SceneManager.GetActiveScene().buildIndex);
         }
 
