@@ -11,15 +11,15 @@ public class PlayerHealth : MonoBehaviour
     bool isGameOver;
 
     
-    public Image[] hearts;
-   // public GameObject Danger;
+   /* public Image[] hearts;
+    public GameObject Danger;
     private void EnableFalse(){
       //  Danger.SetActive(false);
         for(int i = 0; i < 5; i++){
             hearts[i].enabled = false;
         }
     }
-
+    */
     private void OnControllerColliderHit(ControllerColliderHit hit) {
         Rigidbody rigidbody = hit.collider.attachedRigidbody;
         // rigidbody!= null &&
@@ -29,7 +29,7 @@ public class PlayerHealth : MonoBehaviour
             
         }
 
-        
+        /*
         if(healthBar.value == 1){
             EnableFalse();
             hearts[0].enabled = true;
@@ -64,7 +64,7 @@ public class PlayerHealth : MonoBehaviour
            // yield return new WaitForSeconds(3f);
             SceneManager.LoadScene( SceneManager.GetActiveScene().buildIndex);
         }
-
+        */
         
          if(hit.gameObject.tag == "Fog"){
                hit.gameObject.GetComponent<FallenGround>().fall();
