@@ -11,6 +11,7 @@ TagManager:
   - Spinning
   - 1
   - 2
+  - hallway
   layers:
   - Default
   - TransparentFX
