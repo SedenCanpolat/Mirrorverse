@@ -1,18 +1,24 @@
+
+/*
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class LevelController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public sceneNum;
+
+    public void NextLevel(){
+        SceneManagement.LoadScene(sceneNum);
+    }
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+ 
     void Update()
     {
         
     }
-}
+}*/
