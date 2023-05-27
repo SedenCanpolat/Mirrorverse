@@ -90,6 +90,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
+  heartsSpite:
+  - {fileID: 21300000, guid: b4f6b525743bb2c419066bd2fe92fbc3, type: 3}
+  - {fileID: 21300000, guid: 752c42c803bffb54480c55d5df8b4649, type: 3}
+  - {fileID: 21300000, guid: adecbd8dfd31c104284b36017e4abf68, type: 3}
+  - {fileID: 21300000, guid: 14b88c3be5ff67c448b3f4bf09b08552, type: 3}
+  - {fileID: 21300000, guid: fad1d2469781b434abd160a15561f157, type: 3}
+  heart: {fileID: 0}
+  Danger: {fileID: 0}
 --- !u!1 &8026279723155646701
 GameObject:
   m_ObjectHideFlags: 0
