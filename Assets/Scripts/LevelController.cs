@@ -1,24 +1,20 @@
 
-/*
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelController : MonoBehaviour
 {
-    public sceneNum;
+  
+   public int sceneNum;
 
-    public void NextLevel(){
-        SceneManagement.LoadScene(sceneNum);
-    }
-    void Start()
-    {
+   void OnTriggerEnter(Collider  other){
+        if(other.gameObject.tag == "level"){
+          print("aa");
+          SceneManager.LoadScene(sceneNum);
+        }
         
     }
 
- 
-    void Update()
-    {
-        
-    }
-}*/
+}
