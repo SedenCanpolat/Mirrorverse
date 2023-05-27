@@ -12659,16 +12659,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 2654987366615637911, guid: 6b8623e6940849d4ab09142d4b210702,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6469916895813282089, guid: 6b8623e6940849d4ab09142d4b210702,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7243575663438932640, guid: 6b8623e6940849d4ab09142d4b210702,
         type: 3}
       propertyPath: m_Name
@@ -12790,11 +12780,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: InGameUI
       objectReference: {fileID: 0}
-    - target: {fileID: 8114191072208583028, guid: 6b8623e6940849d4ab09142d4b210702,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8131609760661285917, guid: 6b8623e6940849d4ab09142d4b210702,
         type: 3}
       propertyPath: m_IsActive
@@ -12813,11 +12798,6 @@ PrefabInstance:
     - target: {fileID: 8131609762434997092, guid: 6b8623e6940849d4ab09142d4b210702,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8880509939347712940, guid: 6b8623e6940849d4ab09142d4b210702,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -83360,41 +83340,6 @@ PrefabInstance:
       propertyPath: hearts.Array.data[4]
       value: 
       objectReference: {fileID: 1330682369}
-    - target: {fileID: 8026279723124770017, guid: 751c45e7fa8e11d4895b70b74cdb2b61,
-        type: 3}
-      propertyPath: heartsSpite.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8026279723124770017, guid: 751c45e7fa8e11d4895b70b74cdb2b61,
-        type: 3}
-      propertyPath: heartsSpite.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: b4f6b525743bb2c419066bd2fe92fbc3,
-        type: 3}
-    - target: {fileID: 8026279723124770017, guid: 751c45e7fa8e11d4895b70b74cdb2b61,
-        type: 3}
-      propertyPath: heartsSpite.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: 752c42c803bffb54480c55d5df8b4649,
-        type: 3}
-    - target: {fileID: 8026279723124770017, guid: 751c45e7fa8e11d4895b70b74cdb2b61,
-        type: 3}
-      propertyPath: heartsSpite.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300000, guid: adecbd8dfd31c104284b36017e4abf68,
-        type: 3}
-    - target: {fileID: 8026279723124770017, guid: 751c45e7fa8e11d4895b70b74cdb2b61,
-        type: 3}
-      propertyPath: heartsSpite.Array.data[3]
-      value: 
-      objectReference: {fileID: 21300000, guid: 14b88c3be5ff67c448b3f4bf09b08552,
-        type: 3}
-    - target: {fileID: 8026279723124770017, guid: 751c45e7fa8e11d4895b70b74cdb2b61,
-        type: 3}
-      propertyPath: heartsSpite.Array.data[4]
-      value: 
-      objectReference: {fileID: 21300000, guid: fad1d2469781b434abd160a15561f157,
-        type: 3}
     - target: {fileID: 8026279723124770019, guid: 751c45e7fa8e11d4895b70b74cdb2b61,
         type: 3}
       propertyPath: m_RootOrder
@@ -83454,6 +83399,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026279723124770021, guid: 751c45e7fa8e11d4895b70b74cdb2b61,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8026279723124770021, guid: 751c45e7fa8e11d4895b70b74cdb2b61,
         type: 3}
