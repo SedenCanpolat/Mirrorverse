@@ -15,6 +15,7 @@ public class PlayerHealth : MonoBehaviour
    public Sprite[] heartsSpite;
    public Image heart;
     public GameObject Danger;
+    public GameObject YouDead;
 /*
     private void EnableFalse(){
         Danger.SetActive(false);
@@ -63,13 +64,16 @@ public class PlayerHealth : MonoBehaviour
           heart.sprite = heartsSpite[4];
         }
 
-        if(healthBar.value <= 0.10){
+        if(healthBar.value <= 0.13){
             Danger.SetActive(true);
         }
 
         if(healthBar.value == 0){
             Debug.Log("You Lost");
-           // SceneManager.LoadScene( SceneManager.GetActiveScene().buildIndex);
+            YouDead.SetActive(true);
+            if(Input.GetKey(KeyCode.R)){
+              SceneManager.LoadScene( SceneManager.GetActiveScene().buildIndex);
+            } 
         }
         
         
@@ -90,6 +94,10 @@ public class PlayerHealth : MonoBehaviour
             healthBar.value = 0;
             Debug.Log("You Lost");
             isGameOver = true;
+            YouDead.SetActive(true);
+            if(Input.GetKey(KeyCode.R)){
+              SceneManager.LoadScene( SceneManager.GetActiveScene().buildIndex);
+            } 
         }
 
     }

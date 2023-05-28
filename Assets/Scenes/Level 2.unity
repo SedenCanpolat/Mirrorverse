@@ -12664,6 +12664,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6258639731627319099, guid: 6b8623e6940849d4ab09142d4b210702,
+        type: 3}
+      propertyPath: m_Name
+      value: Youded
+      objectReference: {fileID: 0}
+    - target: {fileID: 6258639731627319099, guid: 6b8623e6940849d4ab09142d4b210702,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6469916895813282089, guid: 6b8623e6940849d4ab09142d4b210702,
         type: 3}
       propertyPath: m_IsActive
@@ -12794,16 +12804,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8131609760661285917, guid: 6b8623e6940849d4ab09142d4b210702,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8131609761722776758, guid: 6b8623e6940849d4ab09142d4b210702,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8131609762434997092, guid: 6b8623e6940849d4ab09142d4b210702,
         type: 3}
@@ -51431,6 +51431,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.39999998, y: 1.5857086, z: 1.5732927}
   m_Center: {x: 0, y: -0.05927506, z: 0.45401788}
+--- !u!1 &1382762581 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6258639731627319099, guid: 6b8623e6940849d4ab09142d4b210702,
+    type: 3}
+  m_PrefabInstance: {fileID: 290711057}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1382995940 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7368150452140007808, guid: 9aefa1b8be107b0488f8f92f8fff3071,
@@ -83325,6 +83331,11 @@ PrefabInstance:
       propertyPath: Danger
       value: 
       objectReference: {fileID: 1883218919}
+    - target: {fileID: 8026279723124770017, guid: 751c45e7fa8e11d4895b70b74cdb2b61,
+        type: 3}
+      propertyPath: YouDead
+      value: 
+      objectReference: {fileID: 1382762581}
     - target: {fileID: 8026279723124770017, guid: 751c45e7fa8e11d4895b70b74cdb2b61,
         type: 3}
       propertyPath: healthBar
