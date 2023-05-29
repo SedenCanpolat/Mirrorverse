@@ -7,7 +7,9 @@ using UnityEngine.UI;
 
 public class TakeKey : MonoBehaviour
 {
-   public GameObject oppositeKey;
+   // Sansur ayna arkasındaki cube almak için 
+   // Opposite olan red ve normalde arkadaydı sadece tag yerlerini degistirdim
+  // public GameObject oppositeKey;
   
    public Image key;
    private void Start() {
@@ -16,7 +18,7 @@ public class TakeKey : MonoBehaviour
    void OnMouseDown() {
         if(gameObject.tag == "Key"){
             Destroy(gameObject);
-            Destroy(oppositeKey);
+          //  Destroy(oppositeKey);
             key.enabled = true;
         }
     

@@ -29,11 +29,12 @@ public class SandalyeMovement : MonoBehaviour
        //     destination++;
        //}
 
-      if(Vector3.Distance(player.position, gameObject.transform.position) < closeToObject){  
+       // Player ile ilerleme
+      //if(Vector3.Distance(player.position, gameObject.transform.position) < closeToObject){  
         transform.position = Vector3.MoveTowards(transform.position,  wayParent.GetChild(destination).position, Time.deltaTime * sandalyeSpeed);
        if(Vector3.Distance(transform.position, wayParent.GetChild(destination).position) < 0.1f && destination < wayParent.childCount - 1){
            destination++;
-       }
+       //}
 
        
 
