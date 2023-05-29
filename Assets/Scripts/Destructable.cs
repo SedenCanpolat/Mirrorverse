@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Destructable : MonoBehaviour
 {
-    
+    // Sure ile patlama
+    /*
    void Start() {
         StartCoroutine(waitTime());
    }
@@ -14,7 +15,7 @@ public class Destructable : MonoBehaviour
     Instantiate(destroyedVersion, transform.position, transform.rotation);
     Destroy(gameObject);
    }
-   
+   */
 
     public GameObject destroyedVersion;
 
