@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Mirror_Color : MonoBehaviour
 {
-    private Light light;
+    /*private Light light;
     private Color color;
     private float intensity;
     
@@ -13,10 +13,10 @@ public class Mirror_Color : MonoBehaviour
     }
     
     void Update(){
-        /*color = Color.green;
-        intensity = 5.0f;
-        light.Em.SetColor("_EmissionColor", color*intensity);*/
-        light.color = Color.green;
+        //color = Color.green;
+        //intensity = 5.0f;
+        //light.Em.SetColor("_EmissionColor", //color*intensity);
+        light.color = Color.green;?/
     }
 
 
