@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Door_slide1 : MonoBehaviour
 {
+    
     public void l_fast()
     {
         transform.position = new Vector3(-1,0,0);
@@ -29,5 +30,9 @@ public class Door_slide1 : MonoBehaviour
         transform.position = transform.position + new Vector3(0.005f,0,0);
         
     }
+    
+
+
+
 
 }
