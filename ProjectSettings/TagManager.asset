@@ -13,6 +13,8 @@ TagManager:
   - 2
   - hallway
   - level
+  - left
+  - right
   layers:
   - Default
   - TransparentFX
