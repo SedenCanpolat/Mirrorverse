@@ -100,6 +100,10 @@ public class PlayerHealth : MonoBehaviour
             } 
         }
 
+        if(Input.GetKey(KeyCode.R)){
+              SceneManager.LoadScene( SceneManager.GetActiveScene().buildIndex);
+            } 
+
     }
 
 
