@@ -5,6 +5,13 @@ using UnityEngine;
 public class SandalyeMovement : MonoBehaviour
 {
     //public Transform[] way;
+
+    //ParticleSystem kirari;
+    public GameObject k1;
+    
+    float timer;
+    public float waitTime;
+
     public Transform wayParent;
     int destination; // default olarak 0 olur
     public float sandalyeSpeed;
@@ -13,12 +20,26 @@ public class SandalyeMovement : MonoBehaviour
     public float closeToObject;
 
      private void Start() {
-         StartCoroutine(waitInTheBeginning());
+        // StartCoroutine(waitInTheBeginning());
+        // kirari = GetComponentInChildren<ParticleSystem>();
+        
+        ParticuleClose();
     
   }
 
+ 
+    
     IEnumerator waitInTheBeginning(){
-        yield return new WaitForSecondsRealtime(10f);
+      Debug.Log("Wait");
+      yield return new WaitForSecondsRealtime(waitTime);
+      Debug.Log("Wait");
+        
+        
+    }
+
+
+    void ParticuleClose(){
+        k1.SetActive(false);
     }
 
     void Update()
@@ -29,6 +50,11 @@ public class SandalyeMovement : MonoBehaviour
        //     destination++;
        //}
 
+    timer += Time.deltaTime;
+    if (timer > waitTime)
+    {
+       
+    
        // Player ile ilerleme
       //if(Vector3.Distance(player.position, gameObject.transform.position) < closeToObject){  
         transform.position = Vector3.MoveTowards(transform.position,  wayParent.GetChild(destination).position, Time.deltaTime * sandalyeSpeed);
@@ -36,9 +62,24 @@ public class SandalyeMovement : MonoBehaviour
            destination++;
        //}
 
-       
+            if(destination == 3){
+            Debug.Log("Yep");
+            k1.SetActive(true);
+            
+            /*
+            var em = kirari.emission;
+            em.rateOverTime = 0;
+            */
 
-       }
+        }
+
+       } 
+    } 
+
+        
+       
+    
+      
       
     } 
 
