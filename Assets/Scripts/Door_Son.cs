@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Door_Left_Close : MonoBehaviour
+public class Door_Son : MonoBehaviour
 {
     private int control = 0;
     public GameObject enter;
@@ -22,14 +22,14 @@ public class Door_Left_Close : MonoBehaviour
            Vector3 a = transform.position;
            Vector3 b = target.position;
            transform.position = Vector3.MoveTowards(a,Vector3.Lerp(a,b,t),speed);
-           
+
         }
     }
 
     void OnTriggerEnter(Collider  other){
-        if(other.gameObject.tag == "Spinning" && control==0){
-          //enter.SetActive(false);
+        if(other.gameObject.tag == "Spinning"){
+          enter.SetActive(false);
           control = 1;
-        }   
+        }
     }
 }
