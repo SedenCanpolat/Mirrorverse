@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Door_left : MonoBehaviour
+public class Door_right : MonoBehaviour
 { 
     public Trigger trig;
     public Transform target;
