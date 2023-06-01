@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Scenes : MonoBehaviour
 {
+    /*
     int currentLevel = 0;
     
 
@@ -32,4 +33,5 @@ public class Scenes : MonoBehaviour
              }    
         currentLevel += 1;
     }
+    */
 }
