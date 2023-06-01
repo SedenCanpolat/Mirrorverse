@@ -28,7 +28,7 @@ public class PlayerHealth : MonoBehaviour
         Rigidbody rigidbody = hit.collider.attachedRigidbody;
         // rigidbody!= null &&
         if(hit.gameObject.tag == "Spike"){
-            healthBar.value -= 0.005f;
+            healthBar.value -= 0.0005f;
             Debug.Log("Spike");
             
         }
