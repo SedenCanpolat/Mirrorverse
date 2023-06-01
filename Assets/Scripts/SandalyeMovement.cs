@@ -7,7 +7,11 @@ public class SandalyeMovement : MonoBehaviour
     //public Transform[] way;
 
     //ParticleSystem kirari;
+    public GameObject k0;
     public GameObject k1;
+    public GameObject k2;
+    public GameObject k3;
+    public GameObject k4; 
     
     float timer;
     public float waitTime;
@@ -39,7 +43,11 @@ public class SandalyeMovement : MonoBehaviour
 
 
     void ParticuleClose(){
+        k0.SetActive(false);
         k1.SetActive(false);
+        k2.SetActive(false);
+        k3.SetActive(false);
+        k4.SetActive(false);
     }
 
     void Update()
@@ -61,10 +69,17 @@ public class SandalyeMovement : MonoBehaviour
        if(Vector3.Distance(transform.position, wayParent.GetChild(destination).position) < 0.1f && destination < wayParent.childCount - 1){
            destination++;
        //}
+            if(destination == 1){
+              k0.SetActive(true);
+            }
+
+            if(destination == 2){
+              k1.SetActive(true);
+            }
 
             if(destination == 3){
             Debug.Log("Yep");
-            k1.SetActive(true);
+            k2.SetActive(true);
             
             /*
             var em = kirari.emission;
@@ -72,6 +87,14 @@ public class SandalyeMovement : MonoBehaviour
             */
 
         }
+
+          if(destination == 4){
+            k3.SetActive(true);
+          }
+
+          if(destination == 5){
+            k4.SetActive(true);
+          }
 
        } 
     } 
