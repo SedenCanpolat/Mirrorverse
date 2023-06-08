@@ -28,7 +28,7 @@ public class BM : MonoBehaviour
         int i ;
         //GameObject[] arr = GameObject.FindGameObjectsWithTag("1");
         for(i = 0;i<transform.childCount;i++){
-             yield return new WaitForSecondsRealtime(0.1f);
+             yield return new WaitForSecondsRealtime(0.06f);
             // obj1 = arr[i];
             obj1 = transform.GetChild(i).gameObject;
              obj1.GetComponent<BoxCollider>().isTrigger = isTrigger;
