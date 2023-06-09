@@ -12,6 +12,7 @@ public class TakeKey : MonoBehaviour
   // public GameObject oppositeKey;
   
    public Image key;
+   public GameObject LockCube;
    private void Start() {
         key.enabled = false;
    }
@@ -20,7 +21,10 @@ public class TakeKey : MonoBehaviour
             Destroy(gameObject);
           //  Destroy(oppositeKey);
             key.enabled = true;
+            LockCube.SetActive(false);
+           
         }
+        
     
         
     }

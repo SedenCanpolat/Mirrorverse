@@ -22,9 +22,10 @@ public class SandalyeMovement : MonoBehaviour
 
     public Transform player;
     public float closeToObject;
+    bool didStart;
 
      private void Start() {
-        // StartCoroutine(waitInTheBeginning());
+         StartCoroutine(waitInTheBeginning());
         // kirari = GetComponentInChildren<ParticleSystem>();
         
         ParticuleClose();
@@ -35,7 +36,8 @@ public class SandalyeMovement : MonoBehaviour
     
     IEnumerator waitInTheBeginning(){
       Debug.Log("Wait");
-      yield return new WaitForSecondsRealtime(waitTime);
+      yield return new WaitForSecondsRealtime(4);
+      didStart = true;
       Debug.Log("Wait");
         
         
@@ -58,16 +60,21 @@ public class SandalyeMovement : MonoBehaviour
        //     destination++;
        //}
 
-    timer += Time.deltaTime;
-    if (timer > waitTime)
-    {
-       
+   
+   
+       if(!didStart)return;
     
        // Player ile ilerleme
       //if(Vector3.Distance(player.position, gameObject.transform.position) < closeToObject){  
         transform.position = Vector3.MoveTowards(transform.position,  wayParent.GetChild(destination).position, Time.deltaTime * sandalyeSpeed);
-       if(Vector3.Distance(transform.position, wayParent.GetChild(destination).position) < 0.1f && destination < wayParent.childCount - 1){
-           destination++;
+       bool didReach = Vector3.Distance(transform.position, wayParent.GetChild(destination).position) < 0.1f && destination < wayParent.childCount - 1;
+       if(didReach){
+         if(timer > waitTime){
+            destination++;
+            timer = 0;
+         }
+           timer += Time.deltaTime;
+           
        //}
             if(destination == 1){
               k0.SetActive(true);
@@ -96,7 +103,7 @@ public class SandalyeMovement : MonoBehaviour
             k4.SetActive(true);
           }
 
-       } 
+       
     } 
 
         
