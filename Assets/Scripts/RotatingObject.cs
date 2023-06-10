@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RotatingObject : MonoBehaviour
 {
-    float spinSpeed;
+    public float spinSpeed;
     
     // Start is called before the first frame update
     void Start()
@@ -16,7 +16,7 @@ public class RotatingObject : MonoBehaviour
     void Update()
     {
          if(gameObject.tag == "Spinning"){
-            transform.Rotate(0,1,0);
+            transform.Rotate(0,1 * spinSpeed,0);
          }
     }
 }

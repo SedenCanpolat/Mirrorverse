@@ -98,6 +98,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: fad1d2469781b434abd160a15561f157, type: 3}
   heart: {fileID: 0}
   Danger: {fileID: 0}
+  YouDead: {fileID: 0}
 --- !u!1 &8026279723155646701
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,7 +261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4f4c3af3ac1b0a40888ab7ebcb2ff8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 1000
+  mouseSensitivity: 3
   playerBody: {fileID: 8026279723124770019}
 --- !u!1 &8026279724241390772
 GameObject:

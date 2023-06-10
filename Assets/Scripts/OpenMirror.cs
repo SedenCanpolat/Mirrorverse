@@ -16,13 +16,15 @@ public class OpenMirror : MonoBehaviour
       DemoEnding.enabled = false;
      }
 
-    void OnMouseDown(){
+   // void OnMouseDown(){
    //  if(gameObject.tag == "Mirror" && key.enabled == true){ 
-      
-      if(key.enabled == true){
+    void OnTriggerEnter(Collider  other){
+      if(gameObject.tag == "Mirror"){
+          if(key.enabled == true){
            // Destroy(this.gameObject);
             DemoEnding.enabled = true;
             key.enabled = false;
+            }
          }
     }
 

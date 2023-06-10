@@ -28,7 +28,7 @@ public class PlayerHealth : MonoBehaviour
         Rigidbody rigidbody = hit.collider.attachedRigidbody;
         // rigidbody!= null &&
         if(hit.gameObject.tag == "Spike"){
-            healthBar.value -= 0.002f;
+            healthBar.value -= 0.0015f;
             Debug.Log("Spike");
             
         }
@@ -71,6 +71,7 @@ public class PlayerHealth : MonoBehaviour
         if(healthBar.value == 0){
             Debug.Log("You Lost");
             YouDead.SetActive(true);
+            FindObjectOfType<PlayerMovement>().enabled = false;
             if(Input.GetKey(KeyCode.R)){
               SceneManager.LoadScene( SceneManager.GetActiveScene().buildIndex);
             } 
@@ -95,9 +96,7 @@ public class PlayerHealth : MonoBehaviour
             Debug.Log("You Lost");
             isGameOver = true;
             YouDead.SetActive(true);
-            if(Input.GetKey(KeyCode.R)){
-              SceneManager.LoadScene( SceneManager.GetActiveScene().buildIndex);
-            } 
+            
         }
 
         if(Input.GetKey(KeyCode.R)){
