@@ -90,7 +90,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Update() {
 
-        if(gameObject.transform.position.y < -5  && isGameOver == false){
+        if(gameObject.transform.position.y < -10  && isGameOver == false){
             healthBar.value = 0;
             Debug.Log("You Lost");
             isGameOver = true;
