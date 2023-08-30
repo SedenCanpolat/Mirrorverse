@@ -12,12 +12,12 @@ GameObject:
   - component: {fileID: 2583870877009637528}
   - component: {fileID: 2536062871047569623}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Youded
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8108533015865617595
 RectTransform:
   m_ObjectHideFlags: 0
@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 7243575664468632590}
   - component: {fileID: 7243575664468632591}
   - component: {fileID: 7243575664468632588}
+  - component: {fileID: 7243575663440564397}
   m_Layer: 5
   m_Name: InGameUI
   m_TagString: Untagged
@@ -138,7 +139,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -182,6 +183,24 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &7243575663440564397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7243575664468632589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1383cdac82870134e8367cf7a5230f92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 0}
+  capsule: {fileID: 0}
+  cursor: {fileID: 7781005517017231401}
+  healthbar: {fileID: 8131609761567229065}
+  screen: {fileID: 0}
+  icon: {fileID: 0}
 --- !u!1 &7287048972635414455
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,6 +470,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShowKey
       objectReference: {fileID: 0}
+    - target: {fileID: 2203906945964897676, guid: 71c11ddb64e793d4dbe8297f61eeb3bc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71c11ddb64e793d4dbe8297f61eeb3bc, type: 3}
 --- !u!224 &1812202199366307503 stripped
@@ -576,11 +600,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cursor
       objectReference: {fileID: 0}
+    - target: {fileID: 1116319838880201165, guid: 673941ed175681e4a94f6c502f18e804,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 673941ed175681e4a94f6c502f18e804, type: 3}
 --- !u!224 &7781005517017231400 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1116319838880201164, guid: 673941ed175681e4a94f6c502f18e804,
+    type: 3}
+  m_PrefabInstance: {fileID: 7243575664480504292}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7781005517017231401 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1116319838880201165, guid: 673941ed175681e4a94f6c502f18e804,
     type: 3}
   m_PrefabInstance: {fileID: 7243575664480504292}
   m_PrefabAsset: {fileID: 0}
@@ -591,20 +626,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7243575664468632585}
     m_Modifications:
+    - target: {fileID: 1863777285, guid: ca8aa076c9f234a4784d2ad17fb22f13, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863777287, guid: ca8aa076c9f234a4784d2ad17fb22f13, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b3eff9ae38a5f78488bbf73516b37b08,
+        type: 3}
     - target: {fileID: 1467925326384238017, guid: ca8aa076c9f234a4784d2ad17fb22f13,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1467925326384238017, guid: ca8aa076c9f234a4784d2ad17fb22f13,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1467925327253049900, guid: ca8aa076c9f234a4784d2ad17fb22f13,
         type: 3}
       propertyPath: m_Name
       value: HealthBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467925327253049900, guid: ca8aa076c9f234a4784d2ad17fb22f13,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1467925327253049901, guid: ca8aa076c9f234a4784d2ad17fb22f13,
         type: 3}
@@ -731,6 +780,12 @@ PrefabInstance:
 --- !u!224 &8131609761567229064 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1467925327253049901, guid: ca8aa076c9f234a4784d2ad17fb22f13,
+    type: 3}
+  m_PrefabInstance: {fileID: 7243575665233483429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8131609761567229065 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1467925327253049900, guid: ca8aa076c9f234a4784d2ad17fb22f13,
     type: 3}
   m_PrefabInstance: {fileID: 7243575665233483429}
   m_PrefabAsset: {fileID: 0}
