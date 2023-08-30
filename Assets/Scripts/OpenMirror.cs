@@ -24,6 +24,10 @@ public class OpenMirror : MonoBehaviour
            // Destroy(this.gameObject);
             DemoEnding.enabled = true;
             key.enabled = false;
+                if(DemoEnding.enabled == true && Input.GetKey(KeyCode.R)){
+                Debug.Log("pass");
+                SceneManager.LoadScene(0);
+                }
             }
          }
     }
