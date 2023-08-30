@@ -24,9 +24,12 @@ public class OpenMirror : MonoBehaviour
            // Destroy(this.gameObject);
             DemoEnding.enabled = true;
             key.enabled = false;
+            Controls.controls.WhenPressR += LevelControl.levelControl.RestartGame;
+            Controls.controls.WhenPressR -= LevelControl.levelControl.LevelRestart;
             }
          }
     }
+
 
   
 }

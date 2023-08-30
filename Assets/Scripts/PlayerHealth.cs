@@ -24,6 +24,12 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 */    
+
+    private void Start() {
+        Controls.controls.WhenPressR += LevelControl.levelControl.LevelRestart;
+    }
+
+
     private void OnControllerColliderHit(ControllerColliderHit hit) {
         Rigidbody rigidbody = hit.collider.attachedRigidbody;
         // rigidbody!= null &&
@@ -72,9 +78,6 @@ public class PlayerHealth : MonoBehaviour
             Debug.Log("You Lost");
             YouDead.SetActive(true);
             FindObjectOfType<PlayerMovement>().enabled = false;
-            if(Input.GetKey(KeyCode.R)){
-              SceneManager.LoadScene( SceneManager.GetActiveScene().buildIndex);
-            } 
         }
         
         
@@ -98,10 +101,6 @@ public class PlayerHealth : MonoBehaviour
             YouDead.SetActive(true);
             
         }
-
-        if(Input.GetKey(KeyCode.R)){
-              SceneManager.LoadScene( SceneManager.GetActiveScene().buildIndex);
-            } 
 
     }
 
